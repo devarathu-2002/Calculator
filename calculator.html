@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/js css/font1.css"> 
+
+    <script>
+        function get(a){
+            document.getElementById("n1").value += a;
+        }
+        function equal(){
+            var b=document.getElementById("n1").value;
+            document.getElementById("n1").value=eval(b);
+        }
+        function clear1(){
+            document.getElementById("n1").value="";
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <br>
+<div class="whole">
+  <div class="text">
+    <input type="text" id="n1" placeholder="Number" autocomplete="off"><br>
+  </div><br> 
+  <div class="numbers">
+    <input type="submit" value="7" onclick="get('7')" class="c1">
+    <input type="submit" value="8" onclick="get('8')" class="c1">
+    <input type="submit" value="9" onclick="get('9')" class="c1">
+
+    <input type="submit" value="/" onclick="get('/')" class="symbol"><br><br>
+    <input type="submit" value="4" onclick="get('4')" class="c1">
+    <input type="submit" value="5" onclick="get('5')" class="c1">
+    <input type="submit" value="6" onclick="get('6')" class="c1">
+    <input type="submit" value="*" onclick="get('*')" class="symbol"><br><br>
+    <input type="submit" value="1" onclick="get('1')" class="c1">
+    <input type="submit" value="2" onclick="get('2')" class="c1">
+    <input type="submit" value="3" onclick="get('3')" class="c1">
+    <input type="submit" value="-" onclick="get('-')" class="symbol"><br><br>
+    <input type="submit" value="0" onclick="get('0')" class="c1">
+    <input type="submit" value="." onclick="get('.')" class="c1">
+    <input type="submit" value="=" onclick="equal('=')" class="equal">
+    <input type="submit" value="+" onclick="get('+')" class="symbol"><br><br>
+    <input type="submit" value="clear" onclick="clear1('clear')" class="delete">
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
